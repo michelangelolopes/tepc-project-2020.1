@@ -65,6 +65,7 @@ int main(int argc, char** argv){
     }
 
     double mean;
+    printf("TEMPO, VELOCIDADE MÉDIA\n");
     for(int i = 0; i < config.time_steps; i++)
     {
         mean = 0;
@@ -76,7 +77,7 @@ int main(int argc, char** argv){
         }
 
         mean /= (double) config.vehicles_count;
-        printf("%d, %.2lf\n", i + 1, mean);
+        printf("%d, %.2lf\n", i + 1, mean * REAL_DIST);
         // printf("\n");
     }
     free_vehicles(vehicle);

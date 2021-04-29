@@ -9,6 +9,7 @@
 #define EMPTY -1
 #define EXPRESSO 0
 #define PARADOR 1
+#define REAL_DIST 1.8
 
 struct Vehicle_{
     int speed;
